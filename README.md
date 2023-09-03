@@ -46,7 +46,7 @@ Query => Select Parametreleri
 Result => Select Propertyleri
 Handler => CRUD
 
-## Template Method Design Pattern: 
+## Template Method Design Pattern :
 Template Method tasarım deseni, bir sürecin temel yapısını tanımlayan ancak bazı adımların alt sınıflar tarafından uygulanmasına izin veren bir tasarım desenidir. Bu desen, bir süreç veya algoritmanın genel yapısını belirleyen bir ana sınıfı içerir ve bazı adımların alt sınıflar tarafından özelleştirilmesine olanak tanır. Böylece aynı temel süreç farklı alt sınıflar tarafından farklı davranışlarla uygulanabilir.
 
 Template Method deseni, özellikle şu durumlar için kullanışlıdır:
@@ -58,7 +58,7 @@ Template Method deseni, genellikle bir ana sınıfın içinde abstract (soyut) m
 
 Örnek olarak, bir kahve veya çay yapma sürecini düşünelim. Genel olarak su kaynatma, içeceği demleme, bardağa dökme gibi adımlar vardır. Ancak kahve ve çay bu adımları farklı şekillerde gerçekleştirir. Template Method deseni, bu genel yapının korunmasını ve alt sınıfların sadece ilgili adımları uyarlamasını sağlar.
 
-## Observer Design Pattern: 
+## Observer Design Pattern :
 Gözlemci Tasarım Deseni (Observer Design Pattern), davranışsal tasarım desenlerinden biridir. Bu desen, nesneler arasındaki bağımlılığı azaltmak ve bir nesnenin durumu değiştikçe diğer nesnelere otomatik olarak bildirim göndermek için kullanılır. Gözlemci deseni, birçok nesne arasında tek yönlü bir iletişim kurmanın etkili bir yolunu sunar.
 
 Temel olarak, gözlemci deseni şu iki ana bileşeni içerir:
@@ -71,7 +71,7 @@ Gözlemci deseni genellikle gerçek dünya senaryolarında kullanılır. Örneğ
 
 Gözlemci deseninin temel amacı, nesneler arasındaki sıkı bağımlılıkları azaltmak ve bir nesnenin durumu değiştiğinde diğer nesnelere etkili bir şekilde bildirim göndermektir. Bu sayede kodun daha esnek, sürdürülebilir ve genişletilebilir olması sağlanır.
 
-## Unit Of Work Design Pattern: 
+## Unit Of Work Design Pattern :
 Unit of Work (Çalışma Birimi) tasarım deseni, yazılım geliştirme süreçlerinde özellikle veritabanı işlemlerini yönetmek ve işlemlerin tutarlılığını sağlamak için kullanılan bir tasarım desenidir. Bu desen, veritabanı işlemlerini gruplayarak ve koordine ederek işlemlerin daha iyi kontrol edilmesini ve veritabanı işlemlerinin daha güvenli ve tutarlı bir şekilde gerçekleştirilmesini sağlar.
 
 Unit of Work tasarım deseninin ana bileşenleri şunlardır:
@@ -94,7 +94,7 @@ Tekrar kullanılabilirlik: Bu desen, veritabanı işlemlerini daha modüler hale
 
 Unit of Work tasarım deseni, özellikle büyük ve karmaşık uygulamalarda veritabanı işlemlerini daha etkili bir şekilde yönetmek ve veritabanı işlemlerinin güvenliğini sağlamak için yaygın olarak kullanılır. Bu desen, yazılımın bakımını kolaylaştırır ve veritabanı işlemlerinin daha düzenli bir şekilde yönetilmesini sağlar.
 
-## Repository Design Pattern: 
+## Repository Design Pattern :
 Repository tasarım deseni, yazılım geliştirme süreçlerinde veri erişimini düzenlemek ve yönetmek için kullanılan bir desen olarak karşımıza çıkar. Bu desen, veri tabanıyla iletişim kurmak, veri işlemlerini gerçekleştirmek ve veri kaynaklarını yönetmek gibi işlemleri soyutlamayı hedefler.
 
 Repository deseni, genellikle nesne tabanlı programlama (OOP) ve katmanlı mimarilerle birlikte kullanılır. Bu tasarım deseni, veritabanına erişimi merkezi bir yerde toplar ve iş mantığını veri erişim detaylarından ayırarak kodun daha temiz, düzenli ve bakımı daha kolay hale gelmesini sağlar.
@@ -109,7 +109,7 @@ Yeniden Kullanılabilirlik: Veri erişim kodunu ayrı bir katmana yerleştirmek,
 
 Repository desenini kullanarak, veri erişim kodu ve iş mantığı ayrılabilir. Genellikle bir arayüz veya soyut sınıf tanımlanır ve bu arayüzü veya soyut sınıfı gerçek veri kaynağına erişimi sağlayan sınıflar (örneğin, veritabanı sınıfları) uygular. Bu sayede, iş mantığı veri erişim detaylarından izole edilmiş olur.
 
-## Composite Design Pattern
+## Composite Design Pattern :
 Composite tasarım deseni, nesneleri ağaç benzeri bir hiyerarşi yapısında bir araya getirerek bütün-parça ilişkilerini temsil etmek ve işlemek için kullanılan bir tasarım desenidir. Bu desen, parça ve bütün ilişkilerini yönetmeyi kolaylaştırarak, tekil nesnelerin ve bu nesnelerin kompozit yapıların bir parçası olduğu nesnelerin birleşik bir şekilde ele alınmasını sağlar.
 
 Ana amaç, bireysel nesneleri ve bu nesnelerin kompozit yapılarını tek bir arabirimle işlemektir. Böylece, istemci kodunun bir parça veya bütün nesneyi ayırt etmesi gerekmez, çünkü her ikisi de aynı arabirim aracılığıyla erişilebilir hale gelir.
@@ -130,7 +130,7 @@ Kod tekrarı en aza indirgenir ve bakım daha kolay hale gelir.
 Bileşenler hiyerarşik bir yapıda düzenlendiği için nesneler arasındaki ilişkiler açıkça ifade edilir.
 Bu tasarım deseni, özellikle nesnelerin hiyerarşik bir yapıda organize edildiği durumlarda, örneğin grafik nesneleri, belge ağaçları veya menüler gibi durumlar için kullanışlıdır.
 
-## Mediator Design Pattern
+## Mediator Design Pattern :
 Mediator tasarım deseni, nesneler arasındaki iletişimi düzenlemek ve merkezi bir noktada yönetmek amacıyla kullanılan bir yazılım tasarım desenidir. Bu desen, karmaşık ilişkileri ve etkileşimleri daha sade ve sürdürülebilir bir şekilde ele almanın yollarını sunar. Genellikle birçok nesnenin birbirleriyle doğrudan iletişim kurması yerine, iletişimin bir aracı (mediator) nesne üzerinden gerçekleşmesini sağlar.
 
 Mediator deseni, aşağıdaki temel bileşenlerden oluşur:
@@ -147,7 +147,7 @@ Mediator deseni, özellikle birçok nesnenin birbirleriyle sıkı sıkıya bağl
 
 Örnek bir senaryoda, bir uçuş rezervasyon sistemi düşünelim. Uçuşlar, yolcular, oteller ve arabalar arasında etkileşimler olabilir. Mediator deseni kullanarak uçuş rezervasyon sistemi içindeki nesnelerin iletişimini düzenlemek, kodun daha anlaşılır ve yönetilebilir olmasını sağlayabilir.
 
-## Iterator Design Pattern
+## Iterator Design Pattern :
 Iterator tasarım deseni, bir koleksiyonun veya veri yapısının elemanlarını sırayla gezmek ve erişmek için bir arabirim sağlayan bir tasarım desenidir. Bu desen, koleksiyonların iç yapısına bakılmaksızın elemanlara erişim sağlar ve koleksiyonun yapısını gizler, böylece koleksiyon üzerinde yapısal değişiklikler yapılabilirken döngülerin veya iterasyonların değiştirilmesine gerek kalmaz.
 
 Iterator tasarım deseni, genellikle aşağıdaki temel bileşenleri içerir:
@@ -167,7 +167,7 @@ Koleksiyonun yapısı ve elemanlarının organizasyonu, istemci kodundan gizleni
 Kod tekrarını azaltır ve daha temiz, düzenli bir kod yapısı sağlar.
 Bu desen, özellikle dil bağımsız ve genel amaçlı programlama dillerinde sıklıkla kullanılan bir tasarım desenidir.
 
-## Facade Design Pattern
+## Facade Design Pattern :
 Facade tasarım deseni (Facade Design Pattern), yazılım mühendisliği alanında kullanılan bir tasarım deseni (design pattern) türüdür. Bu desen, bir yazılım sisteminin karmaşıklığını azaltmak ve daha kullanıcı dostu bir arayüz sağlamak amacıyla kullanılır. Genellikle büyük ve karmaşık sistemlerde bulunan alt sistemlerin karmaşıklığını gizlemek için kullanılır.
 
 Facade tasarım deseni, birçok alt sistemi tek bir arayüz üzerinden kullanıcıya sunar. Bu sayede, kullanıcılar karmaşıklığı azaltmak için her alt sistemi ayrı ayrı anlamak zorunda kalmazlar. Facade, kullanıcıların sistemi daha kolay anlamalarına ve kullanmalarına yardımcı olur.
@@ -190,7 +190,7 @@ Kullanıcı (Client): Sistemi kullanacak olan taraf, facade üzerinden sistemi k
 
 Facade tasarım deseni, özellikle büyük ve karmaşık yazılım sistemlerinde kullanıcı dostu bir arayüz sağlamak ve sistemin bakımını kolaylaştırmak için oldukça yararlıdır. Bu desen, sistemin genel tasarımını daha modüler hale getirerek daha iyi bir kod organizasyonu sağlar.
 
-## Decorator Design Pattern
+## Decorator Design Pattern :
 Decorator tasarım deseni (Decorator Design Pattern), nesne yönelimli programlamada kullanılan bir yapısal tasarım desenidir. Bu desen, bir nesneye dinamik olarak davranışlar eklemek veya nesnenin davranışını değiştirmek istediğiniz durumlarda kullanılır. Bu eklemeleri veya değişiklikleri alt sınıflar oluşturmadan yapmanızı sağlar, böylece sınıf yapısını daha esnek hale getirir.
 
 Decorator tasarım deseninin temel amacı, sınıfın açık genişlemesi (open for extension) ve kapalı değişmezliği (closed for modification) prensiplerini uygulayarak mevcut bir nesneye ek işlevsellik eklemektir. Bu desen, aşağıdaki ana bileşenleri içerir:
