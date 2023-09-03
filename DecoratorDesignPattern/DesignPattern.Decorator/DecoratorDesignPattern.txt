@@ -1,0 +1,15 @@
+﻿Decorator tasarım deseni (Decorator Design Pattern), nesne yönelimli programlamada kullanılan bir yapısal tasarım desenidir. Bu desen, bir nesneye dinamik olarak davranışlar eklemek veya nesnenin davranışını değiştirmek istediğiniz durumlarda kullanılır. Bu eklemeleri veya değişiklikleri alt sınıflar oluşturmadan yapmanızı sağlar, böylece sınıf yapısını daha esnek hale getirir.
+
+Decorator tasarım deseninin temel amacı, sınıfın açık genişlemesi (open for extension) ve kapalı değişmezliği (closed for modification) prensiplerini uygulayarak mevcut bir nesneye ek işlevsellik eklemektir. Bu desen, aşağıdaki ana bileşenleri içerir:
+
+Component (Bileşen): Decorator deseninin temel arayüzünü tanımlar. Bu arayüz, değiştirilmesi veya genişletilmesi gereken nesnenin temel işlevlerini içerir.
+
+ConcreteComponent (Somut Bileşen): Component arayüzünü uygulayan somut sınıftır. Ek işlevsellik eklemek veya değiştirmek istediğiniz nesnedir.
+
+Decorator: Abstract Decorator olarak da adlandırılır ve Component arayüzünü uygular. Bu sınıf, ek işlevselliği sağlamak için kullanılır. Decorator sınıfı içinde bir Component nesnesini sarmalar ve bu nesneye ek işlevselliği ekler.
+
+ConcreteDecorator (Somut Dekoratör): Decorator sınıfını genişleten somut sınıflardır. Bu sınıflar, belirli işlevselliği ekleyen veya değiştiren sınıflardır.
+
+Decorator tasarım deseni, özellikle aynı nesne üzerinde farklı işlevselliği dinamik olarak birleştirmek veya kullanmak gerektiğinde kullanışlıdır. Bu desen, özellikle açık kaynak kodlu veya dışarıdan gelen kütüphanelerle çalışırken mevcut sınıfları değiştirmek istemeden ek işlevselliği eklemek için kullanışlıdır.
+
+Özetle, Decorator tasarım deseni, nesnelerin işlevselliğini dinamik olarak genişletmek veya değiştirmek istediğiniz durumlarda kullanılır ve bu sayede daha esnek ve sürdürülebilir bir kod tasarımı sağlar.

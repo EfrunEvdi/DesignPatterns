@@ -1,0 +1,19 @@
+﻿Composite tasarım deseni, nesneleri ağaç benzeri bir hiyerarşi yapısında bir araya getirerek bütün-parça ilişkilerini temsil etmek ve işlemek için kullanılan bir tasarım desenidir. Bu desen, parça ve bütün ilişkilerini yönetmeyi kolaylaştırarak, tekil nesnelerin ve bu nesnelerin kompozit yapıların bir parçası olduğu nesnelerin birleşik bir şekilde ele alınmasını sağlar.
+
+Ana amaç, bireysel nesneleri ve bu nesnelerin kompozit yapılarını tek bir arabirimle işlemektir. Böylece, istemci kodunun bir parça veya bütün nesneyi ayırt etmesi gerekmez, çünkü her ikisi de aynı arabirim aracılığıyla erişilebilir hale gelir.
+
+Composite deseninde temel unsurlar şunlardır:
+
+Component (Bileşen): Bu, hem bireysel nesneleri hem de kompozit nesneleri temsil eden ortak bir arabirimdir. Bireysel nesnelerin ve kompozit nesnelerin ortak operasyonları bu arabirimde tanımlanır.
+
+Leaf (Yaprak): Bireysel nesneleri temsil eder ve genellikle kompozit yapının yaprak düğümleri olarak adlandırılır. Bu nesneler kompozit yapının en alt seviyesinde yer alır.
+
+Composite (Kompozit): Bileşenleri içerebilen ve genellikle alt bileşenleri işlemek için bir dizi operasyon sunan nesnelerdir. Kendi içinde bileşenleri tutabilir ve kompozit yapının dalları olarak hizmet eder.
+
+Composite deseninin avantajları şunlar olabilir:
+
+Bireysel nesneler ve kompozit yapılar aynı arabirim aracılığıyla yönetildiği için istemci kodu basitleşir.
+Yeni bileşen türleri eklemek kolaydır. Sadece yeni bir Leaf veya Composite türü oluşturmanız gerekir.
+Kod tekrarı en aza indirgenir ve bakım daha kolay hale gelir.
+Bileşenler hiyerarşik bir yapıda düzenlendiği için nesneler arasındaki ilişkiler açıkça ifade edilir.
+Bu tasarım deseni, özellikle nesnelerin hiyerarşik bir yapıda organize edildiği durumlarda, örneğin grafik nesneleri, belge ağaçları veya menüler gibi durumlar için kullanışlıdır.

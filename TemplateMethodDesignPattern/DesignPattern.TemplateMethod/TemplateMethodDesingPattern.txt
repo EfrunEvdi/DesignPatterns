@@ -1,0 +1,10 @@
+Template Method tasarım deseni, bir sürecin temel yapısını tanımlayan ancak bazı adımların alt sınıflar tarafından uygulanmasına izin veren bir tasarım desenidir. Bu desen, bir süreç veya algoritmanın genel yapısını belirleyen bir ana sınıfı içerir ve bazı adımların alt sınıflar tarafından özelleştirilmesine olanak tanır. Böylece aynı temel süreç farklı alt sınıflar tarafından farklı davranışlarla uygulanabilir.
+
+Template Method deseni, özellikle şu durumlar için kullanışlıdır:
+
+Bir algoritmanın genel yapısı sabittir, ancak bazı adımların alt sınıflar tarafından farklı şekillerde uygulanması gerekmektedir.
+Kod tekrarını azaltmak ve alt sınıflarda ortak olan işlemleri merkezi bir noktada tutmak istenir.
+Bir temel sınıfın davranışını değiştirmeden alt sınıflarda belirli adımları özelleştirmek istenir.
+Template Method deseni, genellikle bir ana sınıfın içinde abstract (soyut) metotlar ve somut metotlar olarak adlandırılan özelleştirilemeyen adımları içerir. Ana sınıf, bu adımları belirli bir sırayla çağırarak genel algoritmayı yürütür. Alt sınıflar, abstract metotları uygulayarak ve gerektiğinde somut metotları geçersiz kılarak kendi özelleştirilmiş davranışlarını sağlarlar.
+
+Örnek olarak, bir kahve veya çay yapma sürecini düşünelim. Genel olarak su kaynatma, içeceği demleme, bardağa dökme gibi adımlar vardır. Ancak kahve ve çay bu adımları farklı şekillerde gerçekleştirir. Template Method deseni, bu genel yapının korunmasını ve alt sınıfların sadece ilgili adımları uyarlamasını sağlar.

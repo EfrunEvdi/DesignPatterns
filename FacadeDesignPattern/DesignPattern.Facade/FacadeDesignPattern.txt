@@ -1,0 +1,21 @@
+﻿Facade tasarım deseni (Facade Design Pattern), yazılım mühendisliği alanında kullanılan bir tasarım deseni (design pattern) türüdür. Bu desen, bir yazılım sisteminin karmaşıklığını azaltmak ve daha kullanıcı dostu bir arayüz sağlamak amacıyla kullanılır. Genellikle büyük ve karmaşık sistemlerde bulunan alt sistemlerin karmaşıklığını gizlemek için kullanılır.
+
+Facade tasarım deseni, birçok alt sistemi tek bir arayüz üzerinden kullanıcıya sunar. Bu sayede, kullanıcılar karmaşıklığı azaltmak için her alt sistemi ayrı ayrı anlamak zorunda kalmazlar. Facade, kullanıcıların sistemi daha kolay anlamalarına ve kullanmalarına yardımcı olur.
+
+Bu desenin temel amacı şunlardır:
+
+Alt sistemlerin karmaşıklığını gizlemek: Facade, alt sistemlerin karmaşıklığını gizler ve kullanıcıya sadece gerekli olan bilgileri ve işlevleri sunar.
+
+Kolay kullanım: Facade, kullanıcıların sistemi daha kolay anlamalarına ve kullanmalarına yardımcı olur, böylece sistemi daha verimli bir şekilde kullanabilirler.
+
+Bağımsızlık: Facade, alt sistemlerin değişikliklerine karşı kullanıcıları korur. Alt sistemlerde yapılan değişiklikler facade üzerinde minimum etki yapar.
+
+Facade tasarım deseni genellikle aşağıdaki bileşenlerden oluşur:
+
+Facade: Kullanıcıya sunulan ana arayüzdür. Kullanıcı, sistemi bu arayüz üzerinden kullanır.
+
+Alt Sistemler (Subsystems): Sistemin karmaşıklığını gizlemek için kullanılan alt sistemlerdir. Facade, bu alt sistemlere erişir ve kullanıcıya sunar.
+
+Kullanıcı (Client): Sistemi kullanacak olan taraf, facade üzerinden sistemi kullanır.
+
+Facade tasarım deseni, özellikle büyük ve karmaşık yazılım sistemlerinde kullanıcı dostu bir arayüz sağlamak ve sistemin bakımını kolaylaştırmak için oldukça yararlıdır. Bu desen, sistemin genel tasarımını daha modüler hale getirerek daha iyi bir kod organizasyonu sağlar.

@@ -1,0 +1,25 @@
+Asp.Net Core 5.0
+Mssql
+Banka Yönlendirme Uygulaması
+
+
+Chain of Responsibility (Sorumluluk Zinciri) tasarım deseni, nesne tabanlı programlamada ve yazılım mühendisliğinde kullanılan bir davranışsal desen türüdür. Bu desen, bir dizi işlemi sırayla gerçekleştiren ve her bir işlemi tek tek ele alabilen nesnelerin bir zincirini oluşturmayı amaçlar. Temel olarak, bir isteğin başlangıç noktasından itibaren işlenmesini sağlar ve bu işlemi sorumluluk zinciri boyunca farklı nesneler üzerinden geçerek gerçekleştirir.
+
+Chain of Responsibility deseni, birçok farklı senaryoda kullanılabilir. Örneğin, kullanıcı isteklerini işlemek veya bir dizi filtreleme veya doğrulama işlemini uygulamak gibi durumlar için idealdir. Bu deseni kullanarak, isteğin işlenme sürecini esnek ve genişletilebilir hale getirebilirsiniz.
+
+Anahtar bileşenler ve terimler:
+
+Handler (İşleyici): Bu, desendeki zincirin elemanlarının genel arayüzünü temsil eder. Herhangi bir işlemin ele alınması için kullanılan metodları içerir.
+
+ConcreteHandler (Somut İşleyici): Bu, gerçek işlemleri gerçekleştiren sınıflardır. İşleyici arayüzünü uygular ve gelen isteği ele alabilir veya gerektiğinde sonraki işleyiciye iletebilir.
+
+Client (Müşteri): Bu, zinciri başlatan ve istekleri zincire ileten sınıftır.
+
+Chain of Responsibility deseni kullanılarak iş akışı şu şekilde gerçekleşir:
+
+İstek zinciri başlar ve bir istek oluşturulur.
+İstek zincirinin ilk işleyicisi belirlenir ve istek bu işleyiciye iletilir.
+İlk işleyici, isteği ele alır ve gerektiğinde işlemi gerçekleştirir.
+Eğer ilk işleyici isteği ele alamazsa veya ele almak istemezse, istek bir sonraki işleyiciye iletilir.
+Bu süreç isteğin zincir boyunca ilerlemesi ve uygun işleyici tarafından ele alınması veya zincir sonuna ulaşılana kadar devam eder.
+Chain of Responsibility deseni, yazılımın esnekliğini ve genişletilebilirliğini artırırken, nesneler arasındaki sıkı bağımlılıkları azaltmaya yardımcı olabilir. Bu desen, özellikle birden çok işlem veya filtreleme adımının olduğu karmaşık işlemlerde kullanıldığında faydalı olabilir.

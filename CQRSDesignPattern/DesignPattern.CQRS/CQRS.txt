@@ -1,0 +1,25 @@
+CQRS (Command Query Responsibility Segregation) tasarım deseni, yazılım uygulamalarının karmaşık veri yönetimi gereksinimlerini ele almak için kullanılan bir mimaridir. Bu desen, veri okuma ve yazma işlemlerini ayrı işlemler olarak ele alarak, uygulamanın performansını, ölçeklenebilirliğini ve sürdürülebilirliğini artırmayı hedefler.
+
+CQRS deseninin temel fikri, bir uygulamanın sorgulama (query) ve komut (command) işlemlerini farklı modeller kullanarak ele almasıdır:
+
+Komut Modeli (Command Model): Veri değiştirme işlemlerini yönetir. Yani, uygulamanın durumunu değiştiren, veri tabanına yazan, güncelleyen veya silen işlemler burada gerçekleşir. Komut modeli, genellikle sadece yazma işlemlerine odaklanır ve sık değişebilir. Bu sayede yazma tarafı, daha farklı gereksinimleri ele alabilecek ve optimize edilebilecek şekilde tasarlanabilir.
+
+Sorgu Modeli (Query Model): Veri okuma işlemlerini yönetir. Uygulama tarafından sunulan sorgularla veritabanından veri okuyarak sonuçları kullanıcılara sunar. Sorgu modeli, yazma işlemlerinin etkilenmediği bir kopya veritabanını veya önbelleği kullanarak sorgulama performansını artırabilir. Bu sayede okuma işlemleri hızlı ve ölçeklenebilir olabilir.
+
+CQRS deseninin bazı ana faydaları şunlardır:
+
+Performans ve Ölçeklenebilirlik: CQRS, yazma ve okuma işlemlerini ayırdığı için, her taraftaki gereksinimlere göre optimize edilebilir ve böylece uygulamanın performansı artar. Ayrıca, yoğun okuma işlemleri için önbellek kullanma olanağı sağlar.
+
+Sürdürülebilirlik: Karmaşık uygulamaların daha modüler ve sürdürülebilir bir şekilde tasarlanmasına yardımcı olur. Her model, kendi sorumluluklarına odaklanır ve bu nedenle daha az bağımlıdır.
+
+Deneyim Odaklı Tasarım: CQRS, uygulamanın komut ve sorgu işlemlerinin farklı modellerde ele alınmasını sağlar. Bu da uygulama geliştiricilerinin, her bir işleve daha uygun olan araçları ve teknikleri kullanmalarına olanak tanır.
+
+Ancak, CQRS desenini uygulamak, gerekli durumda artan karmaşıklık ve efor gerektirebilir. Bu nedenle, uygulamanın ihtiyaçlarına ve ölçeğine bağlı olarak, her zaman CQRS kullanmak gerekli olmayabilir. Yine de, büyük ve karmaşık uygulamalarda performans ve ölçeklenebilirlik ihtiyaçları, CQRS desenini kullanmayı cazip hale getirebilir.
+
+
+Command => Insert,Update,Delete Propertyleri
+Query => Select Parametreleri
+Result => Select Propertyleri
+Handler => CRUD
+
+

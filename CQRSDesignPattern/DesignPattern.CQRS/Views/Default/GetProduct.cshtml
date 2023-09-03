@@ -1,0 +1,32 @@
+﻿@model DesignPattern.CQRS.CQRSPattern.Results.GetProductByIDQueryResult
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container pt-5">
+    <div class="card">
+        <div class="card-body">
+            <form method="post">
+                <input type="hidden" asp-for="ProductID" />
+
+                <label><b>Ürün Adı :</b></label>
+                <input type="text" class="form-control" asp-for="Name" />
+
+                <hr />
+
+                <label><b>Ürün Fiyatı :</b></label>
+                <input type="text" class="form-control" asp-for="Price" />
+
+                <hr />
+
+                <label><b>Ürün Stok :</b></label>
+                <input type="text" class="form-control" asp-for="Stock" />
+
+                <a href="/Default/Index" type="submit" class="btn btn-outline-primary col-12 mt-2">Ürün Listesine Dön!</a>
+            </form>
+        </div>
+    </div>
+</div>

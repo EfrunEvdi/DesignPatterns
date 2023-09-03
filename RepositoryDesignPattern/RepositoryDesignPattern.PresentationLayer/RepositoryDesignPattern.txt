@@ -1,0 +1,13 @@
+﻿Repository tasarım deseni, yazılım geliştirme süreçlerinde veri erişimini düzenlemek ve yönetmek için kullanılan bir desen olarak karşımıza çıkar. Bu desen, veri tabanıyla iletişim kurmak, veri işlemlerini gerçekleştirmek ve veri kaynaklarını yönetmek gibi işlemleri soyutlamayı hedefler.
+
+Repository deseni, genellikle nesne tabanlı programlama (OOP) ve katmanlı mimarilerle birlikte kullanılır. Bu tasarım deseni, veritabanına erişimi merkezi bir yerde toplar ve iş mantığını veri erişim detaylarından ayırarak kodun daha temiz, düzenli ve bakımı daha kolay hale gelmesini sağlar.
+
+Repository deseninin ana amacı, veri tabanı işlemlerini ve veri erişimini izole etmek ve soyutlamaktır. Bu, aşağıdaki avantajları sağlar:
+
+Kodun Daha Bakımı Kolay Olması: Veri erişim kodunu merkezi bir yerde toplamak, kodun bakımını ve güncellemelerini daha kolay hale getirir. Veritabanı yapısında değişiklik yapılması gerektiğinde, sadece repository sınıflarında değişiklik yapılması yeterli olabilir.
+
+Daha İyi Test Edilebilirlik: Repository deseni, veri erişim işlemlerini soyutladığı için, iş mantığını test etmek istediğinizde veritabanı ile ilgili detaylarla uğraşmak zorunda kalmazsınız. Bu da kodun daha iyi bir şekilde test edilmesini sağlar.
+
+Yeniden Kullanılabilirlik: Veri erişim kodunu ayrı bir katmana yerleştirmek, aynı veri kaynaklarına farklı parçaların erişebilmesini sağlar ve böylece kodun yeniden kullanılabilirliğini artırır.
+
+Repository desenini kullanarak, veri erişim kodu ve iş mantığı ayrılabilir. Genellikle bir arayüz veya soyut sınıf tanımlanır ve bu arayüzü veya soyut sınıfı gerçek veri kaynağına erişimi sağlayan sınıflar (örneğin, veritabanı sınıfları) uygular. Bu sayede, iş mantığı veri erişim detaylarından izole edilmiş olur.

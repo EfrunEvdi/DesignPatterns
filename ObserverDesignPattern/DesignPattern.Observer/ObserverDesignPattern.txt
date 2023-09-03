@@ -1,0 +1,11 @@
+﻿Gözlemci Tasarım Deseni (Observer Design Pattern), davranışsal tasarım desenlerinden biridir. Bu desen, nesneler arasındaki bağımlılığı azaltmak ve bir nesnenin durumu değiştikçe diğer nesnelere otomatik olarak bildirim göndermek için kullanılır. Gözlemci deseni, birçok nesne arasında tek yönlü bir iletişim kurmanın etkili bir yolunu sunar.
+
+Temel olarak, gözlemci deseni şu iki ana bileşeni içerir:
+
+Subject (Özne): Bu, durumu takip edilen ve gözlemcilere bildirim gönderen nesneyi temsil eder. Özne, içerdiği gözlemcilere (observer) durum değişiklikleri hakkında haber verir.
+
+Observer (Gözlemci): Bu, özneyi izleyen ve öznenin durumundaki değişiklikleri yakalamak isteyen nesneleri temsil eder. Gözlemciler, öznenin durumu değiştikçe haber alır ve buna göre gerekli işlemleri gerçekleştirir.
+
+Gözlemci deseni genellikle gerçek dünya senaryolarında kullanılır. Örneğin, bir hava durumu istasyonu, hava durumu bilgilerini alarak çeşitli medya platformlarına (televizyon, radyo, internet siteleri) iletmek isteyebilir. Burada hava durumu istasyonu özne olarak, medya platformları ise gözlemciler olarak düşünülebilir. Hava durumu değiştikçe, istasyon medya platformlarına güncellemeleri ileterek haberdar eder.
+
+Gözlemci deseninin temel amacı, nesneler arasındaki sıkı bağımlılıkları azaltmak ve bir nesnenin durumu değiştiğinde diğer nesnelere etkili bir şekilde bildirim göndermektir. Bu sayede kodun daha esnek, sürdürülebilir ve genişletilebilir olması sağlanır.

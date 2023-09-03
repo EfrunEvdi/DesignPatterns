@@ -1,0 +1,40 @@
+﻿@model List<DesignPattern.CQRS.CQRSPattern.Results.GetProductQueryResult>
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container text-center">
+    <hr />
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Ürün Adı</th>
+                <th>Fiyat</th>
+                <th>Stok</th>
+                <th>Detaylar</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.ProductName</td>
+                    <td>@item.Price</td>
+                    <td>@item.Stock</td>
+                    <td><a href="/Default/GetProduct/@item.ID" class="btn btn-outline-success">Detaylar</a></td>
+                    <td><a href="/Default/UpdateProduct/@item.ID" class="btn btn-outline-info">Güncelle</a></td>
+                    <td><a href="/Default/DeleteProduct/@item.ID" class="btn btn-outline-danger">Sil</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/Default/AddProduct" class="btn btn-outline-primary col-12">Yeni Ürün Ekle!</a>
+</div>

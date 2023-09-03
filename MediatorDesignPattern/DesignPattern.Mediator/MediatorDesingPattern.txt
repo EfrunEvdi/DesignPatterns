@@ -1,0 +1,15 @@
+﻿Mediator tasarım deseni, nesneler arasındaki iletişimi düzenlemek ve merkezi bir noktada yönetmek amacıyla kullanılan bir yazılım tasarım desenidir. Bu desen, karmaşık ilişkileri ve etkileşimleri daha sade ve sürdürülebilir bir şekilde ele almanın yollarını sunar. Genellikle birçok nesnenin birbirleriyle doğrudan iletişim kurması yerine, iletişimin bir aracı (mediator) nesne üzerinden gerçekleşmesini sağlar.
+
+Mediator deseni, aşağıdaki temel bileşenlerden oluşur:
+
+Mediator (Aracı): Nesneler arası iletişimi yöneten merkezi bir bileşendir. Diğer nesneler arasındaki iletişimi düzenler ve bu iletişimin nasıl gerçekleşeceğini belirler.
+
+Concrete Mediator (Somut Aracı): Mediator arayüzünü uygulayan ve nesneler arasındaki iletişimi gerçekleştiren sınıftır. Bu sınıf, nesnelerin isteklerini alır, gerekli işlemleri yapar ve gerektiğinde diğer nesnelere iletebilir.
+
+Colleague (İş Arkadaşı): Mediator ile iletişim kuran nesnelerdir. Bu nesneler, diğer nesnelerle doğrudan iletişim kurmak yerine istekleri ve bilgileri Mediator üzerinden paylaşırlar.
+
+Concrete Colleague (Somut İş Arkadaşı): Colleague arayüzünü uygulayan ve Mediator ile iletişim kuran nesnelerdir. Bu nesneler, işlevsel görevleri gerçekleştirirken Mediator üzerinden diğer nesnelerle iletişim kurabilirler.
+
+Mediator deseni, özellikle birçok nesnenin birbirleriyle sıkı sıkıya bağlı olduğu ve bir değişiklik yapıldığında diğer nesneleri etkileyebilecek bir senaryoda kullanışlıdır. Bu desen, kodun daha modüler ve bakımı daha kolay hale gelmesini sağlayarak karmaşıklığı azaltabilir.
+
+Örnek bir senaryoda, bir uçuş rezervasyon sistemi düşünelim. Uçuşlar, yolcular, oteller ve arabalar arasında etkileşimler olabilir. Mediator deseni kullanarak uçuş rezervasyon sistemi içindeki nesnelerin iletişimini düzenlemek, kodun daha anlaşılır ve yönetilebilir olmasını sağlayabilir.
