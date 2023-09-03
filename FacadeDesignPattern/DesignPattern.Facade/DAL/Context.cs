@@ -6,7 +6,7 @@ namespace DesignPattern.Facade.DAL
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=EFRUN\\SQLEXPRESS;initial catalog=DesignPattern10;integrated security=true;");
+            optionsBuilder.UseSqlServer("");
         }
 
         public DbSet<Customer> Customers { get; set; }

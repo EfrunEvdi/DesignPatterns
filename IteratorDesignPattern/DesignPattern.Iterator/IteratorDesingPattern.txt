@@ -1,5 +1,4 @@
-﻿
-Iterator tasarım deseni, bir koleksiyonun veya veri yapısının elemanlarını sırayla gezmek ve erişmek için bir arabirim sağlayan bir tasarım desenidir. Bu desen, koleksiyonların iç yapısına bakılmaksızın elemanlara erişim sağlar ve koleksiyonun yapısını gizler, böylece koleksiyon üzerinde yapısal değişiklikler yapılabilirken döngülerin veya iterasyonların değiştirilmesine gerek kalmaz.
+﻿Iterator tasarım deseni, bir koleksiyonun veya veri yapısının elemanlarını sırayla gezmek ve erişmek için bir arabirim sağlayan bir tasarım desenidir. Bu desen, koleksiyonların iç yapısına bakılmaksızın elemanlara erişim sağlar ve koleksiyonun yapısını gizler, böylece koleksiyon üzerinde yapısal değişiklikler yapılabilirken döngülerin veya iterasyonların değiştirilmesine gerek kalmaz.
 
 Iterator tasarım deseni, genellikle aşağıdaki temel bileşenleri içerir:
 

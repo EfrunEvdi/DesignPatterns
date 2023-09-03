@@ -1,0 +1,21 @@
+﻿Unit of Work (Çalışma Birimi) tasarım deseni, yazılım geliştirme süreçlerinde özellikle veritabanı işlemlerini yönetmek ve işlemlerin tutarlılığını sağlamak için kullanılan bir tasarım desenidir. Bu desen, veritabanı işlemlerini gruplayarak ve koordine ederek işlemlerin daha iyi kontrol edilmesini ve veritabanı işlemlerinin daha güvenli ve tutarlı bir şekilde gerçekleştirilmesini sağlar.
+
+Unit of Work tasarım deseninin ana bileşenleri şunlardır:
+
+Unit of Work (Çalışma Birimi): Bu bileşen, veritabanı işlemlerini koordine eden ana sınıftır. Unit of Work sınıfı, işlemleri gruplar, sıraya koyar ve işlemlerin başarılı bir şekilde tamamlanmasını sağlar.
+
+Repository (Depo): Repository sınıfları, veritabanı işlemleri için kullanılan özel sınıflardır. Her veri tabanı nesnesi için bir Repository sınıfı olabilir ve bu sınıflar, veritabanına erişim işlemlerini ve sorgularını gerçekleştirir.
+
+Entity (Varlık): Entity sınıfları, veritabanındaki tablolara karşılık gelen nesnelerdir. Bu nesnelerin CRUD (Create, Read, Update, Delete) işlemleri için Repository sınıfları tarafından kullanılırlar.
+
+Unit of Work tasarım deseninin temel amaçları şunlardır:
+
+Veritabanı işlemlerini gruplama: Unit of Work, bir işlem veya işlem grubunu tek bir iş birimi olarak gruplar. Bu, işlemlerin daha iyi yönetilmesini ve koordine edilmesini sağlar.
+
+İşlemlerin sırasını belirleme: Unit of Work, işlemlerin sırasını belirler ve bu sıraya göre işlemlerin gerçekleştirilmesini sağlar.
+
+İşlemlin tutarlılığını sağlama: Unit of Work, işlemlerin başarılı bir şekilde tamamlanmasını sağlar veya hata durumunda geri alınmasını yönetir, bu sayede veritabanının tutarlılığını korur.
+
+Tekrar kullanılabilirlik: Bu desen, veritabanı işlemlerini daha modüler hale getirir ve yeniden kullanılabilir sınıfların oluşturulmasına yardımcı olur.
+
+Unit of Work tasarım deseni, özellikle büyük ve karmaşık uygulamalarda veritabanı işlemlerini daha etkili bir şekilde yönetmek ve veritabanı işlemlerinin güvenliğini sağlamak için yaygın olarak kullanılır. Bu desen, yazılımın bakımını kolaylaştırır ve veritabanı işlemlerinin daha düzenli bir şekilde yönetilmesini sağlar.
